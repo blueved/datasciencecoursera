@@ -1,0 +1,41 @@
+- introduce yourself to Git with your name and public email address
+$ git config --global user.name "Your Name Comes Here"
+$ git config --global user.email you@yourdomain.example.com
+
+- to get help:
+$ git help log
+
+- create a new project
+$ git init     // from the project directory
+
+- add file to the project / making change
+git add .
+git add file1 file2 file3
+
+- commit changes
+git diff --cached       // see what is getting committed
+git commit -m "message"
+
+- Viewing project history
+git log --stat
+git log --oneline
+git log -p           // to see complete diffs at each step
+$ git log --stat --summary     //overview of the change 
+
+- Managing branches
+git branch experimentalBranch      // create a new branch
+git branch                                   // list of all existing branches
+git checkout experimentalBranch             / switch to experimentalBranch
+
+- merge the changes made in experimentalBranch into master (we are in master branch)
+git merge experimentalBranch
+
+- show conflicts:
+git diff
+
+- Once you’ve edited the files to resolve the conflicts
+git add .
+git commit -m "message ..."
+
+- display graphic
+gitk
