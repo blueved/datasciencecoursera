@@ -7,7 +7,7 @@ complete <- function(directory, id = 1:332) {
 	## 2  1041
 	## ...
 	## where 'id' is the monitor ID number and 'nobs' is the
-	## number of complete cases
+	## number of complete cases.
 
 	index <- 1
 	df <- data.frame(matrix(ncol = 2))
