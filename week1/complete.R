@@ -8,8 +8,8 @@ complete <- function(directory, id = 1:332) {
 	## ...
 	## where 'id' is the monitor ID number and 'nobs' is the
 	## number of complete cases.
-	##
-
+	message('test the git')
+	
 	index <- 1
 	df <- data.frame(matrix(ncol = 2))
     for (i in id){
