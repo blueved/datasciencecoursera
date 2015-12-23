@@ -2,11 +2,10 @@
 ## functions do
 ## The assignment is regarding lexical scoping and caching functions that may require a long computation time. 
 ## Specifically I am using solve() to find the inverse of a matrix and cache it using a free floating variable. 
-## I am returning an error as described below.
 
-## First I stored a function in a variable a<-makeCacheMatrix()Then I run a$set(matrix(1:4,2,2)to store a matrix
-
-## When I run cacheSolve(a) I get Error in as.vector(x, mode) : cannot coerce type 'closure' to vector of type 'any'
+## Stored a function in a variable a<-makeCacheMatrix()
+## Run a$set(matrix(1:4,2,2)to store a matrix
+## Run cacheSolve(a)
 ## Write a short comment describing this function
 
 
