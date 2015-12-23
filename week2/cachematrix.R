@@ -28,11 +28,18 @@ cacheSolve <- function(x=matrix(), ...) {
 	## Return a matrix that is the inverse of 'x'
     m<-x$getmatrix()
     if(!is.null(m)){
-      message("getting cached data")
+      message("*** getting cached data")
       return(m)
     }
     matrix <- x$get() 
     m<-solve(matrix, ...)
     x$setmatrix(m)
     m
+}
+
+unitTest <- function(){
+	mt <- matrix(c(1,2,3,4), 2, 2)
+	cacheSolve(mt)
+	cacheSolve(mt)
+	
 }
